@@ -1,0 +1,18 @@
+# Ham feed verisi (7 gun saklanir, toplayici siler)
+veri/
+# Calistirma loglari
+log/
+# Python
+__pycache__/
+*.pyc
+# Gecici dosyalar
+*.tmp
+*.bak
+# macOS
+.DS_Store
+# Proje hafizasi (yerel)
+memory/
+# Playwright ciktilari
+.playwright-mcp/
+# launchd tanimi (makineye ozgu yollar icerir; kurulu kopya ~/Library/LaunchAgents altinda)
+com.nobetci.gunluk.plist

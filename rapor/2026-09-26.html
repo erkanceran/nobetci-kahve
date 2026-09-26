@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'">
+<meta name="referrer" content="no-referrer">
+<title>Nöbetçi Raporu 26.09.2026</title>
+<style>
+:root{--bg:#f7f4ef;--panel:#fff;--ink:#231e18;--muted:#6f655a;--line:#e6dfd4;--accent:#7a4a26;
+--risk:#b3402e;--risk-bg:#fbeeeb;--firsat:#2c7a4b;--firsat-bg:#eaf5ee;--fikir:#2c5c88;--fikir-bg:#eaf1f8;
+--marka:#7a4a26;--marka-bg:#f6eee6;--uyari:#8a5a00;--uyari-bg:#fdf4e1;--shadow:0 1px 2px rgba(35,30,24,.06),0 4px 16px rgba(35,30,24,.05)}
+@media (prefers-color-scheme:dark){:root{--bg:#15120f;--panel:#1e1a16;--ink:#eee7dd;--muted:#a89d90;
+--line:#332d26;--accent:#d49a6a;--risk:#f08a76;--risk-bg:#2d1a16;--firsat:#6fcf97;--firsat-bg:#15261c;
+--fikir:#83b5e6;--fikir-bg:#15212d;--marka:#d49a6a;--marka-bg:#2a1f16;--uyari:#f0c060;--uyari-bg:#2a2210;--shadow:none}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:880px;margin:0 auto;padding:40px 16px 64px}
+header{margin-bottom:28px}
+.ust{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-size:32px;line-height:1.2;margin:6px 0 4px;letter-spacing:-.01em}
+.tarih{color:var(--muted);margin:0}
+.sayilar{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.sayilar li{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:14px;color:var(--muted)}
+.sayilar b{color:var(--ink);font-variant-numeric:tabular-nums}
+section{margin-top:36px}
+h2{font-size:20px;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+h2 .adet{font-size:13px;font-weight:600;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:1px 9px}
+.ozet{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px;font-size:17px;box-shadow:var(--shadow)}
+.ozet p{margin:0}
+.not{background:var(--uyari-bg);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-top:14px;color:var(--ink)}
+.not h3{margin:0 0 6px;font-size:14px;color:var(--uyari)}
+.not ul{margin:0;padding-left:20px}
+.kart{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:10px;padding:16px 20px;margin-bottom:12px;box-shadow:var(--shadow)}
+.kart.risk{--c:var(--risk);--cb:var(--risk-bg)}.kart.firsat{--c:var(--firsat);--cb:var(--firsat-bg)}
+.kart.fikir{--c:var(--fikir);--cb:var(--fikir-bg)}.kart.marka{--c:var(--marka);--cb:var(--marka-bg)}
+.kart h3{margin:0 0 8px;font-size:17px;line-height:1.35;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.kart p{margin:6px 0}
+.alan span{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--c);font-weight:600}
+.rozet{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--c);background:var(--cb);border-radius:999px;padding:2px 8px}
+.haberler{list-style:none;margin:12px 0 0;padding:12px 0 0;border-top:1px dashed var(--line)}
+.haberler li{margin-bottom:8px;font-size:14px}
+.haber-baslik{display:block;color:var(--ink)}
+.kaynaklar{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px;color:var(--muted)}
+a{color:var(--c,var(--accent));text-decoration:none}a:hover{text-decoration:underline}
+.bos{color:var(--muted);font-style:italic;margin:0}
+.tablo-kutu{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+.sayi{text-align:right;font-variant-numeric:tabular-nums}
+.durum{font-weight:600}.durum.ok{color:var(--firsat)}.durum.hata{color:var(--risk)}
+td small{display:block;color:var(--muted);white-space:normal}
+.kapsam-not{color:var(--muted);font-size:14px}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:600px){h1{font-size:26px}main{padding-top:28px}.kart{padding:14px 16px}}
+@media print{:root{--bg:#fff;--panel:#fff;--shadow:none}main{padding:0;max-width:none}.kart,.ozet{break-inside:avoid}
+a::after{content:" (" attr(href) ")";font-size:11px;color:var(--muted);word-break:break-all}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="ust">Kuytu Kahve · Haber Nöbetçisi</div>
+<h1>Nöbetçi Raporu</h1>
+<p class="tarih">26 Eylül 2026, Cumartesi · 26.09.2026 09:47</p>
+<ul class="sayilar"><li><b>3</b> kaynak</li><li><b>183</b> haber</li><li><b>177</b> ayrı haber</li><li><b>2</b> risk</li><li><b>1</b> fırsat</li><li><b>2</b> içerik fikri</li></ul>
+</header>
+<section><h2>Özet</h2><div class="ozet"><p>Bu dönemde Kuytu Kahve adının geçtiği bir haber yok. Markayı en çok ilgilendiren gelişmeler, bir indirim zincirinin aktüel kataloğunda çekirdek ve Türk kahvesinin indirimli fiyatlarla yer alması ile dolar kuruna dair haberler. Tüketici sepetinin küçüldüğüne dair değerlendirme ve iç bölgelerde havaların serinleyeceği tahmini de talep ve içerik açısından not edilmeli.</p></div><div class="not"><h3>Veri notları</h3><ul><li>Bazı haberlerin içeriği pencere tarihiyle uyuşmuyor. DUS 1. dönem başvuruları, BİLSEM sonuçları, Arefe Günü noter ve ikinci cemre haberleri 2026 yılının ilk aylarına ait bilgiler taşıyor. Bunlar eski içeriklerin yeniden yayını olabilir, emin değilim.</li><li>Aynı olayı anlatan bazı haberler ayrı gruplarda duruyor ve birleştirilmemiş: borsa manipülasyonu soruşturmasında 13 şüphelinin serbest bırakılması, Ankara&#x27;da 104 ton et ele geçirilmesi, Turgutlu&#x27;daki saldırıda 7 tutuklama ve fon soruşturmasında Fatmagül Lafçı&#x27;nın gözaltına alınması haberleri.</li><li>Bir kaynaktan gelen haberlerin çoğunda özet alanı boş. Bu haberler için yalnızca başlık değerlendirildi.</li><li>Haber metinlerinde modele yönelik talimat veya şüpheli içerik görülmedi.</li></ul></div></section>
+<section><h2>Doğrudan Marka Anılmaları<span class="adet">0</span></h2><p class="bos">Bu bölüm için bulgu yok.</p></section><section><h2>Riskler<span class="adet">2</span></h2><article class="kart risk"><h3>İndirim zincirinde indirimli çekirdek ve Türk kahvesi</h3><p class="alan"><span>Neden önemli</span>Bir indirim marketinin 29 Eylül kataloğunda 250 gramlık çekirdek kahve, hazır kahve ve aromalı Türk kahvesi indirimli fiyatlarla yer alıyor. Evde kahve demleyen segment bu hafta fiyat karşılaştırması yapabilir. Satışa etkisi tahmin, ölçülmüş değil.</p><p class="alan"><span>Öneri</span>Katalog döneminde web sitesi ve pazaryeri satışlarını izleyin. Fiyat indirimine gitmek yerine ürün bilgisini, örneğin kavurma tarihini ve öğütme seçeneklerini, ürün sayfalarında daha görünür kılmayı değerlendirin.</p><ul class="haberler"><li><span class="haber-baslik">BİM 29 Eylül 2026 aktüel ürünler kataloğu</span><span class="kaynaklar"><a href="https://www.haberturk.com/bilgi/foto/bim-29-eylul-2026-aktuel-urunler-katalogu-kahve-cesitleri-geliyor-bim-aktuel-urunler-katalogunda-neler-var-3915201" target="_blank" rel="noopener noreferrer">Habertürk · 26.09 01:45 ↗</a></span></li></ul></article><article class="kart risk"><h3>Dolar kuru ve enflasyon baskısı</h3><p class="alan"><span>Neden önemli</span>Fitch, Türkiye için enflasyonist baskıların sürdüğünü belirtti ve dolar/TL tahmini açıkladı. Ancak habere göre tahmin rakamları elimizde yok. Başka bir haberde yatırım araçları içinde haftayı zararsız kapatan tek aracın dolar olduğu belirtildi. Yeşil çekirdek ithalatı dolara bağlı olduğu için bu gelişmeler maliyeti doğrudan etkiler.</p><p class="alan"><span>Öneri</span>İki ithalat firmasıyla bir sonraki yeşil çekirdek alımının zamanlamasını ve ödeme koşullarını konuşun. Maliyet tablonuzu güncel kurla yeniden hesaplayın.</p><ul class="haberler"><li><span class="haber-baslik">Fitch&#x27;ten Türkiye için enflasyon ve dolar/TL tahmini</span><span class="kaynaklar"><a href="https://www.ekonomim.com/kuresel-ekonomi/fitchten-turkiye-icin-enflasyon-ve-dolartl-tahmini-haberi-920790" target="_blank" rel="noopener noreferrer">Ekonomim · 25.09 19:08 ↗</a></span></li><li><span class="haber-baslik">Altın, borsa, euro, dolar, fon... Kaybettireni çok olan haftada sadece biri kazandırdı</span><span class="kaynaklar"><a href="https://www.ekonomim.com/foto-galeri/ekonomi/altin-borsa-euro-dolar-fon-kaybettireni-cok-olan-haftada-sadece-biri-kazandirdi-galeri-920794" target="_blank" rel="noopener noreferrer">Ekonomim · 25.09 20:28 ↗</a></span></li></ul></article></section><section><h2>Fırsatlar<span class="adet">1</span></h2><article class="kart firsat"><h3>Tüketici sepetinin küçülmesi<span class="rozet">dolaylı</span></h3><p class="alan"><span>Neden önemli</span>Ipsos verilerine dayanan değerlendirmede, tüketicilerin alışveriş sıklığını artırdığı ancak sepet başına ürün sayısını 1 ila 3 adede düşürdüğü söyleniyor. Bunun kahve alımına nasıl yansıdığı haberde yok. Küçük gramajlı paketlere talep artabilir, bu bir tahmin.</p><p class="alan"><span>Öneri</span>Web sitesi ve pazaryerlerinde küçük gramajlı paket satışlarının payına bakın. Veri destekliyorsa daha küçük paket seçeneğini değerlendirin.</p><ul class="haberler"><li><span class="haber-baslik">Prof. Dr. Hakan Bektaş: Sepet küçülüyor, yüksek faiz ve enflasyon yeni normal oluyor</span><span class="kaynaklar"><a href="https://www.ekonomim.com/ekonomi/prof-dr-hakan-bektas-sepet-kuculuyor-yuksek-faiz-ve-enflasyon-yeni-normal-oluyor-haberi-920831" target="_blank" rel="noopener noreferrer">Ekonomim · 26.09 08:56 ↗</a></span></li></ul></article></section><section><h2>İçerik Fikirleri<span class="adet">2</span></h2><article class="kart fikir"><h3>Serin havaya demleme rehberi</h3><p>Pazartesiden itibaren iç bölgelerde sıcaklıkların 4-5 derece düşmesi bekleniyor. Buna bağlı olarak soğuk demlemeden sıcak filtre kahveye geçişi anlatan kısa bir demleme rehberi hazırlanabilir. Ankara&#x27;daki kafelerde mevsim geçişine uygun bir menü notu da eklenebilir.</p><p class="alan"><span>Kanal</span>sosyal medya, kafe içi</p><ul class="haberler"><li><span class="haber-baslik">Balkanlardan geliyor... Sıcaklık düşüyor! Bu hafta hava nasıl olacak?</span><span class="kaynaklar"><a href="https://www.haberturk.com/gundem/hava-durumu-son-dakika-balkanlardan-geliyor-sicaklik-dusuyor-bu-hafta-hava-nasil-olacak-3915073" target="_blank" rel="noopener noreferrer">Habertürk · 26.09 06:26 ↗</a></span></li><li><span class="haber-baslik">Sıcaklıklar düşecek... Bugün hava nasıl olacak? Yaza veda başlıyor...</span><span class="kaynaklar"><a href="https://www.haberturk.com/gundem/hava-durumu-istanbul-sicakliklar-dusecek-bugun-hava-nasil-olacak-yaza-veda-basliyor-3915206" target="_blank" rel="noopener noreferrer">Habertürk · 26.09 09:13 ↗</a></span></li></ul></article><article class="kart fikir"><h3>Kavurma tarihi ne anlatır</h3><p>Paketteki kavurma tarihinin nasıl okunduğunu ve çekirdeğin evde nasıl saklandığını sade bir dille anlatan bir içerik hazırlanabilir. Başka markalarla kıyas yapılmamalı, sağlık yorumu eklenmemeli.</p><p class="alan"><span>Kanal</span>web sitesi, sosyal medya</p><ul class="haberler"><li><span class="haber-baslik">BİM 29 Eylül 2026 aktüel ürünler kataloğu</span><span class="kaynaklar"><a href="https://www.haberturk.com/bilgi/foto/bim-29-eylul-2026-aktuel-urunler-katalogu-kahve-cesitleri-geliyor-bim-aktuel-urunler-katalogunda-neler-var-3915201" target="_blank" rel="noopener noreferrer">Habertürk · 26.09 01:45 ↗</a></span></li></ul></article></section>
+<section><h2>Kapsam</h2>
+<div class="tablo-kutu"><table><thead><tr><th>Tarama</th><th>Kaynak</th><th>Durum</th><th class="sayi">Haber</th><th>En eski</th><th>En yeni</th></tr></thead><tbody><tr><td>26.09 09:47</td><td>Dünya</td><td><span class="durum ok">okundu</span></td><td class="sayi">27</td><td>26.09 00:00</td><td>26.09 09:20</td></tr><tr><td>26.09 09:47</td><td>Ekonomim</td><td><span class="durum ok">okundu</span></td><td class="sayi">52</td><td>25.09 19:08</td><td>26.09 09:33</td></tr><tr><td>26.09 09:47</td><td>Habertürk</td><td><span class="durum ok">okundu</span></td><td class="sayi">104</td><td>25.09 17:38</td><td>26.09 09:44</td></tr></tbody></table></div>
+<div class="kapsam-not"><p><strong>Hiçbir kaynağın kapsamadığı aralıklar:</strong> 24.09 09:47 - 25.09 17:38. RSS yalnızca son haberleri verdiği için bu aralıklardaki haberler rapora girmedi.</p>
+<p>Pencere: 24.09 09:47 - 26.09 09:47 (48 saat).</p></div>
+</section>
+<footer>Bu rapor feeds.json'daki RSS kaynaklarından otomatik toplandı ve Claude ile analiz edildi. Bağlantılar, kaynak adları ve saatler analizden değil doğrudan haber verisinden alınır.</footer>
+</main>
+</body>
+</html>

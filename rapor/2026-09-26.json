@@ -1,0 +1,62 @@
+{
+  "ozet": "Bu dönemde Kuytu Kahve adının geçtiği bir haber yok. Markayı en çok ilgilendiren gelişmeler, bir indirim zincirinin aktüel kataloğunda çekirdek ve Türk kahvesinin indirimli fiyatlarla yer alması ile dolar kuruna dair haberler. Tüketici sepetinin küçüldüğüne dair değerlendirme ve iç bölgelerde havaların serinleyeceği tahmini de talep ve içerik açısından not edilmeli.",
+  "veri_notlari": [
+    "Bazı haberlerin içeriği pencere tarihiyle uyuşmuyor. DUS 1. dönem başvuruları, BİLSEM sonuçları, Arefe Günü noter ve ikinci cemre haberleri 2026 yılının ilk aylarına ait bilgiler taşıyor. Bunlar eski içeriklerin yeniden yayını olabilir, emin değilim.",
+    "Aynı olayı anlatan bazı haberler ayrı gruplarda duruyor ve birleştirilmemiş: borsa manipülasyonu soruşturmasında 13 şüphelinin serbest bırakılması, Ankara'da 104 ton et ele geçirilmesi, Turgutlu'daki saldırıda 7 tutuklama ve fon soruşturmasında Fatmagül Lafçı'nın gözaltına alınması haberleri.",
+    "Bir kaynaktan gelen haberlerin çoğunda özet alanı boş. Bu haberler için yalnızca başlık değerlendirildi.",
+    "Haber metinlerinde modele yönelik talimat veya şüpheli içerik görülmedi."
+  ],
+  "marka_anilmalari": [],
+  "riskler": [
+    {
+      "baslik": "İndirim zincirinde indirimli çekirdek ve Türk kahvesi",
+      "haberler": [
+        "h118"
+      ],
+      "neden_onemli": "Bir indirim marketinin 29 Eylül kataloğunda 250 gramlık çekirdek kahve, hazır kahve ve aromalı Türk kahvesi indirimli fiyatlarla yer alıyor. Evde kahve demleyen segment bu hafta fiyat karşılaştırması yapabilir. Satışa etkisi tahmin, ölçülmüş değil.",
+      "oneri": "Katalog döneminde web sitesi ve pazaryeri satışlarını izleyin. Fiyat indirimine gitmek yerine ürün bilgisini, örneğin kavurma tarihini ve öğütme seçeneklerini, ürün sayfalarında daha görünür kılmayı değerlendirin.",
+      "dolayli": false
+    },
+    {
+      "baslik": "Dolar kuru ve enflasyon baskısı",
+      "haberler": [
+        "h19",
+        "h36"
+      ],
+      "neden_onemli": "Fitch, Türkiye için enflasyonist baskıların sürdüğünü belirtti ve dolar/TL tahmini açıkladı. Ancak habere göre tahmin rakamları elimizde yok. Başka bir haberde yatırım araçları içinde haftayı zararsız kapatan tek aracın dolar olduğu belirtildi. Yeşil çekirdek ithalatı dolara bağlı olduğu için bu gelişmeler maliyeti doğrudan etkiler.",
+      "oneri": "İki ithalat firmasıyla bir sonraki yeşil çekirdek alımının zamanlamasını ve ödeme koşullarını konuşun. Maliyet tablonuzu güncel kurla yeniden hesaplayın.",
+      "dolayli": false
+    }
+  ],
+  "firsatlar": [
+    {
+      "baslik": "Tüketici sepetinin küçülmesi",
+      "haberler": [
+        "h149"
+      ],
+      "neden_onemli": "Ipsos verilerine dayanan değerlendirmede, tüketicilerin alışveriş sıklığını artırdığı ancak sepet başına ürün sayısını 1 ila 3 adede düşürdüğü söyleniyor. Bunun kahve alımına nasıl yansıdığı haberde yok. Küçük gramajlı paketlere talep artabilir, bu bir tahmin.",
+      "oneri": "Web sitesi ve pazaryerlerinde küçük gramajlı paket satışlarının payına bakın. Veri destekliyorsa daha küçük paket seçeneğini değerlendirin.",
+      "dolayli": true
+    }
+  ],
+  "icerik_fikirleri": [
+    {
+      "baslik": "Serin havaya demleme rehberi",
+      "haberler": [
+        "h123",
+        "h163"
+      ],
+      "fikir": "Pazartesiden itibaren iç bölgelerde sıcaklıkların 4-5 derece düşmesi bekleniyor. Buna bağlı olarak soğuk demlemeden sıcak filtre kahveye geçişi anlatan kısa bir demleme rehberi hazırlanabilir. Ankara'daki kafelerde mevsim geçişine uygun bir menü notu da eklenebilir.",
+      "kanal": "sosyal medya, kafe içi"
+    },
+    {
+      "baslik": "Kavurma tarihi ne anlatır",
+      "haberler": [
+        "h118"
+      ],
+      "fikir": "Paketteki kavurma tarihinin nasıl okunduğunu ve çekirdeğin evde nasıl saklandığını sade bir dille anlatan bir içerik hazırlanabilir. Başka markalarla kıyas yapılmamalı, sağlık yorumu eklenmemeli.",
+      "kanal": "web sitesi, sosyal medya"
+    }
+  ],
+  "uyarilar": []
+}

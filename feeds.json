@@ -1,0 +1,7 @@
+{
+  "feeds": [
+    { "ad": "Dünya", "url": "https://www.dunya.com/rss" },
+    { "ad": "Ekonomim", "url": "https://www.ekonomim.com/export/rss" },
+    { "ad": "Habertürk", "url": "https://www.haberturk.com/rss" }
+  ]
+}
